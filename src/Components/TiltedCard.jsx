@@ -8,7 +8,7 @@ const springValues = {
 };
 
 export default function TiltedCard({
-  imageSrc="./public/Prajwal.png",
+  imageSrc,
   altText = 'Tilted card image',
   captionText = 'The Hero',
   containerHeight = '100%',

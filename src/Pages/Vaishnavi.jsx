@@ -10,58 +10,37 @@ import Download from "../Components/Download";
 import Animated from "../Components/Animated";
 
 
-function Prajwal() {
+function Vaishnavi() {
   const [showContent, setshowContent] = useState(false)
- useGSAP(() => {
-  const tl = gsap.timeline();
-
-  tl.to(".vi-mask-group", {
-    rotate: 10,
-    duration: 2,
-    ease: "power4.inOut",
-    transformOrigin: "50% 50%",
-  })
-  .to(".vi-mask-group", {
-    scale: 10,
-    duration: 2,
-    opacity: 0,
-    ease: "expo.inOut",
-    transformOrigin: "50% 50%",
-    onUpdate: function () {
-      if (this.progress() >= 0.9) {
-        // prevent double execution
-        if (!document.querySelector(".svg")) return;
-
-        setTimeout(() => {
-          const el = document.querySelector(".svg");
-
-          // ✅ check if element still exists and belongs to its parent
-          if (el && el.parentNode && el.parentNode.contains(el)) {
-            try {
+ useGSAP(() => { // this gsap code runs when the component mounts
+   const tl = gsap.timeline();
+   tl.to(".vi-mask-group",{   // this gsap code makes the VI rotate by 10 deegree
+    rotate:10,
+    duration:2,
+    ease:"power4.inOut",
+    transformOrigin:"50% 50%",
+   })
+   .to (".vi-mask-group",{ // this gsap code makes the VI scale up by 10 times and fade out
+    scale:10,
+    duration:2,
+    opacity:0,
+    ease:"expo.inOut", 
+    transformOrigin:"50% 50%",
+    // opacity:0,
+   onUpdate: function(){ // this onUpdate function removes the svg element from the DOM once the animation is 90% complete
+      if(this.progress() >= 0.9){
+       setTimeout(()=>{  //settimeout is used this get a 50ms delye that makes the white screen which appears for a sec dispapper 
+         const el = document.querySelector(".svg");
+            if (el && el.parentNode) {
               el.parentNode.removeChild(el);
-            } catch (error) {
-              console.warn("Element already removed, skipping...");
             }
-          }
-
-          setshowContent(true);
-        }, 50);
-
-        this.kill(); // stop GSAP timeline safely
+        setshowContent(true);
+       },50)
+        this.kill(); // kill the animation to prevent further updates
       }
-    },
-  });
-
-  // ✅ Clean up GSAP when component unmounts
-  return () => {
-    tl.kill();
-    const el = document.querySelector(".svg");
-    if (el && el.parentNode && el.parentNode.contains(el)) {
-      el.parentNode.removeChild(el);
     }
-  };
-}, []);
-
+   })
+ });
  useGSAP(()=>{
  if(!showContent) return;
  gsap.to(".main",{
@@ -154,7 +133,7 @@ function Prajwal() {
       <Animated/> {/* this is Animated Component */}
      {showContent && <div className="main w-full bg-black rotate-[-10deg] scale-[1.7]">
         <Land characterImg="./image-Photoroom.png"/> {/* this is Land Component */}
-        <div className="w-full h-screen flex bg-black items-center justify-center px-10"> // this is the section below Land Component
+        <div className="w-full h-screen flex bg-black items-center justify-center px-10">
           <div className="cont flex text-white w-full h-[80%] ">
            <div className="leftimg relative w-1/2 h-full">
           <TiltedCard imageSrc="./public/Prajwal.png"/>
@@ -164,7 +143,7 @@ function Prajwal() {
            /> {/* this is Download Component */}
           </div>
         </div>
-        <Cards data={Madness} chaosData={chaosData} imgData={imgData}/> {/* this is Cards Component */}
+        <Cards data={Madness} chaosData={chaosData} imgData={imgData} /> {/* this is Cards Component */}
         <ScrollCard 
         StandImg="/personcar.png" 
         data={cardData}/> {/* this is ScrollCard Component */}
@@ -175,4 +154,4 @@ function Prajwal() {
   );
 }
 
-export default Prajwal
+export default Vaishnavi
