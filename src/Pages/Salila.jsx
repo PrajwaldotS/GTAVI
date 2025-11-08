@@ -74,8 +74,8 @@ function Salila() {
   gsap.to(".character",{
   rotate:0,
   x:"-50",
-  bottom:"-1%",
-  scale:1.4,
+  bottom:"-10%",
+  scale:0.9,
   delay:"-.7",
   duration:2.5,
   ease:"Expo.easeInOut"
@@ -101,42 +101,67 @@ function Salila() {
   })
  }, [showContent]);
  const DownloadData = {
-            Head1: "Still Running",
-            Head2: "Not Hunting",
-            para1: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas laborum aut illum consectetur expedita repudiandae magnam voluptate inventore ea laboriosam!",
-            para2: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad illum eum sunt eos, consequatur fugiat?",
-            para3: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad illum eum sunt eos, consequatur fugiat?"
- }
-  const cardData = [
-  { Head: "Card Heading 1", para: "This is the first paragraph of the card." },
-  { Head: "Card Heading 2", para: "This is the second paragraph of the card." },
-  { Head: "Card Heading 3", para: "This is the third paragraph of the card." },
-  { Head: "Card Heading 4", para: "This is the fourth paragraph of the card." },
-  ];
-  const Madness = {
-    Madness1 : "Turns every getaway into a cinematic masterpiece.",
-    Madness2 : "Recharges health by flexing in the mirror.",
-    Madness3 : "Police reports list him as “unrealistic.”",
-    Madness4 : "Never misses a headshot — even when it’s just a vibe check."
-  }
-  const chaosData = {
-    drivingIQ: 3,
-    coolnessFactor: 5,
-    chaosLevel: 3,
-  };
-  const imgData = {
-    src: "./Prajwal.png",
-    Btndata : "Summon the Legend"
-  }
+  Head1: "Tomboy",
+  Head2: "The planner",
+  para1:
+    "Tomboy is the backbone no one asked for but everyone relies on. Bold, confident, and fearless, she protects her people without ever making it look like effort. She’s that one friend who can argue, roast, and defend you in the same breath.",
+  para2:
+    "Famous across college for being smart, sarcastic, and impossible to intimidate, she’s the teachers’ favorite and the group’s driver — literally. Every morning and evening, she drops and picks up Sasta Rebel Kid, pretending to be annoyed but secretly loving it.",
+  para3:
+    "She gets bored easily and is always half sleepy in class, but when things get serious, she switches on instantly — calm, sharp, and ready to lead. Her energy isn’t chaotic — it’s contagious.",
+};
+
+const cardData = [
+  {
+    Head: "Background",
+    para:
+      "Known as one of the smartest students in college, Tomboy balances her attitude with intellect. Teachers respect her, seniors know her, and juniors either fear or admire her. She doesn’t try to lead — it just happens naturally because of how she carries herself.",
+  },
+  {
+    Head: "Personality",
+    para:
+      "Bold, sarcastic, and fun to be around, she has a habit of saying “bro” way too often. Always direct, never fake. She may tease or argue, but it’s always out of love. When things go wrong, she’s the first to take control and the last to walk away.",
+  },
+  {
+    Head: "What Drives Her",
+    para:
+      "She lives for her people — Sasta Rebel Kid and The Tailor are her priorities, and she’d do anything to protect them. Freedom, loyalty, and respect are her rules. She doesn’t care about opinions, only intentions. If she trusts you, you’re safe for life.",
+  },
+  {
+    Head: "Little Things",
+    para:
+      "Her backpack is basically part of her identity — it goes everywhere with her. She’s always saying “bro” in every mood possible. Sometimes bored, sometimes sleepy, but always present when it matters. She loves English music with a sprinkle of Hindi, and her laugh can turn any serious moment light.",
+  },
+];
+
+const Madness = {
+  Madness1: "Drives like she’s in an action movie — even to class.",
+  Madness2: "Says 'bro' more than she breathes.",
+  Madness3: "Can roast, fix, and protect — all before lunch.",
+  Madness4: "Turns chaos into team strategy within seconds.",
+};
+
+const chaosData = {
+  drivingIQ: 5,
+  RoastPower:3,
+  LeatureSurvival:1,
+  MoodSwing:1,
+};
+
+const imgData = {
+  src: "./Prajwal.png",
+  Btndata: "Summon the Storm",
+};
+
   return (
     <>
       <Animated/> {/* this is Animated Component */}
      {showContent && <div className="main w-full bg-black rotate-[-10deg] scale-[1.7]">
-        <Land characterImg="./image-Photoroom.png"/> {/* this is Land Component */}
+        <Land characterImg="./SalilaSelfie.png"/> {/* this is Land Component */}
         <div className="w-full h-screen flex bg-black items-center justify-center px-10">
           <div className="cont flex text-white w-full h-[80%] ">
            <div className="leftimg relative w-1/2 h-full">
-          <TiltedCard imageSrc="./public/Salila.png"/>
+          <TiltedCard imageSrc="./public/Prajwal.png"/>
            </div>
            <Download
             data={DownloadData}

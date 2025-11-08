@@ -12,8 +12,9 @@ const Cards = ({data , chaosData, imgData}) => {
           <div className="text-white flex flex-col gap-10 rounded-3xl  px-8 justify-between py-10 items-center h-[80%] w-[30%] mx-10 shadow-[0_0_50px_10px_rgba(234,179,8,0.4)] ">
                  <DefaultChaos
                   drivingIQ={chaosData.drivingIQ}
-                  coolnessFactor={chaosData.coolnessFactor}
-                  chaosLevel={chaosData.chaosLevel}
+                  RoastPower={chaosData.RoastPower}
+                  LeatureSurvial={chaosData.LeatureSurvival}
+                  MoodSwing= {chaosData.MoodSwing}
                  />
                 </div>
               

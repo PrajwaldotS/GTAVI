@@ -102,33 +102,58 @@ function Praachi() {
   })
  }, [showContent]);
  const DownloadData = {
-            Head1: "Still Running",
-            Head2: "Not Hunting",
-            para1: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas laborum aut illum consectetur expedita repudiandae magnam voluptate inventore ea laboriosam!",
-            para2: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad illum eum sunt eos, consequatur fugiat?",
-            para3: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad illum eum sunt eos, consequatur fugiat?"
- }
-  const cardData = [
-  { Head: "Card Heading 1", para: "This is the first paragraph of the card." },
-  { Head: "Card Heading 2", para: "This is the second paragraph of the card." },
-  { Head: "Card Heading 3", para: "This is the third paragraph of the card." },
-  { Head: "Card Heading 4", para: "This is the fourth paragraph of the card." },
-  ];
-  const Madness = {
-    Madness1 : "Turns every getaway into a cinematic masterpiece.",
-    Madness2 : "Recharges health by flexing in the mirror.",
-    Madness3 : "Police reports list him as “unrealistic.”",
-    Madness4 : "Never misses a headshot — even when it’s just a vibe check."
-  }
-  const chaosData = {
-    drivingIQ: 3,
-    coolnessFactor: 5,
-    chaosLevel: 3,
-  };
-  const imgData = {
-    src: "./Prajwal.png",
-    Btndata : "Summon the Legend"
-  }
+  Head1: "Sasta Rebel Kid",
+  Head2: "The Heart ",
+  para1:
+    "Sasta Rebel Kid is the kind of person who can make you laugh and think in the same minute. Funny, bold, and sharp-minded, she has the habit of overthinking everything — and somehow still turning it into a strength.",
+  para2:
+    "She’s emotional and defensive when it comes to the people she loves, and she’ll stand up for them without hesitation. She doesn’t chase attention, but her vibe naturally pulls people in — calm, stylish, and real.",
+  para3:
+    "Behind her bold jokes and carefree lines, there’s someone who feels deeply but hides it well. When it matters, she’s the one with a plan, the one who stays till the end.",
+};
+
+const cardData = [
+  {
+    Head: "Background",
+    para:
+      "A known face around college — not because she tries, but because she stands out naturally. She’s serious during exams, funny with friends, and bold when things get messy. She’s learned that not everyone deserves her energy, and that’s what makes her peaceful.",
+  },
+  {
+    Head: "Personality",
+    para:
+      "Smart, moody, confident, and brutally honest. She jokes a lot, but her honesty cuts through when it matters. She overthinks every detail but somehow still manages to look effortlessly chill. Always has a nickname for everyone and laughs at the most unexpected times.",
+  },
+  {
+    Head: "What Drives Her",
+    para:
+      "She values respect and loyalty above everything. Her goals aren’t loud — she works on them quietly while everyone else talks. She’s driven by a mix of ambition and emotion, and when she decides on something, she doesn’t stop until it’s hers.",
+  },
+  {
+    Head: "Little Things",
+    para:
+      "Her ring and glasses are more than style — they’re part of her personality. She listens to English indie songs and romantic tracks when no one’s around. She gives everyone nicknames, teases her close friends, and somehow always smiles at the wrong time — it’s her way of lightening the room.",
+  },
+];
+
+const Madness = {
+  Madness1: "Turns every argument into a mic drop moment.",
+  Madness2: "Can roast and motivate you in the same sentence.",
+  Madness3: "Mood swings synced perfectly with playlist changes.",
+  Madness4: "Plans chaos like it’s a school project — and aces it.",
+};
+
+const chaosData = {
+  drivingIQ: 1,
+  RoastPower:4,
+  LeatureSurvival:5,
+  MoodSwing:5,
+};
+
+const imgData = {
+  src: "./Prajwal.png",
+  Btndata: "Summon the Rebel",
+};
+
   return (
     <>
       <Animated/> {/* this is Animated Component */}

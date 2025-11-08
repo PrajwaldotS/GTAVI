@@ -96,7 +96,7 @@ function Prajwal() {
   rotate:0,
   x:"-50",
   bottom:"-1%",
-  scale:1.4,
+  scale:0.95,
   delay:"-.7",
   duration:2.5,
   ease:"Expo.easeInOut"
@@ -122,42 +122,70 @@ function Prajwal() {
   })
  }, [showContent]);
  const DownloadData = {
-            Head1: "Still Running",
-            Head2: "Not Hunting",
-            para1: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas laborum aut illum consectetur expedita repudiandae magnam voluptate inventore ea laboriosam!",
-            para2: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad illum eum sunt eos, consequatur fugiat?",
-            para3: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad illum eum sunt eos, consequatur fugiat?"
- }
-  const cardData = [
-  { Head: "Card Heading 1", para: "This is the first paragraph of the card." },
-  { Head: "Card Heading 2", para: "This is the second paragraph of the card." },
-  { Head: "Card Heading 3", para: "This is the third paragraph of the card." },
-  { Head: "Card Heading 4", para: "This is the fourth paragraph of the card." },
-  ];
-  const Madness = {
-    Madness1 : "Turns every getaway into a cinematic masterpiece.",
-    Madness2 : "Recharges health by flexing in the mirror.",
-    Madness3 : "Police reports list him as “unrealistic.”",
-    Madness4 : "Never misses a headshot — even when it’s just a vibe check."
-  }
-  const chaosData = {
-    drivingIQ: 3,
-    coolnessFactor: 5,
-    chaosLevel: 3,
-  };
-  const imgData = {
-    src: "./Prajwal.png",
-    Btndata : "Summon the Legend"
-  }
+  Head1: "Black Panther",
+  Head2: "The Driver",
+  para1:
+    "Black Panther isn’t the loudest in the room, but when he speaks, people stop and listen. He’s got that mix of humor, confidence, and a touch of mischief that keeps everyone around him entertained.",
+  para2:
+    "A tough breakup and family loss hit him hard, but instead of breaking down, he built himself up — physically and mentally. That calmness people notice? It’s not natural, it’s earned.",
+  para3:
+    "Now, he lives for moments — late-night rides, gym sessions, and real conversations. He’s chill most days, but when he wants something, he goes for it without hesitation.",
+};
+
+const cardData = [
+  {
+    Head: "Background",
+    para:
+      "Black Panther’s story isn’t dramatic — it’s real. He’s seen people come and go, faced heartbreak, and dealt with loss that changed him. Every challenge shaped him into someone who doesn’t complain — he adapts. That quiet maturity is what sets him apart.",
+  },
+  {
+    Head: "Personality",
+    para:
+      "Funny, confident, and a bit of a flirt. He doesn’t fake emotions, doesn’t try to impress — he just is who he is. Around friends, he’s the one who keeps the mood alive, and when things get rough, he’s the first one to calm everyone down. He’s got heart, even if he hides it behind jokes.",
+  },
+  {
+    Head: "What Drives Him",
+    para:
+      "He’s not chasing fame or money. He’s chasing peace — the kind you find on empty roads and in late-night talks. He wants a simple life filled with good people, real love, and just enough thrill to feel alive. Every risk he takes is his way of reminding himself he’s still breathing.",
+  },
+  {
+    Head: "Little Things",
+    para:
+      "He’s got small habits that make him, him — the chain he never takes off, the bracelet that’s always on his wrist, and the gum he’s always chewing. He believes in energy — some people wear luck, he wears calm. These little things keep him balanced, no matter how chaotic life gets.",
+  },
+];
+
+const Madness = {
+  Madness1: "Turns every getaway into a cinematic masterpiece.",
+  Madness2: "Recharges health by flexing in the mirror.",
+  Madness3: "Police reports list him as “unrealistic.”",
+  Madness4: "Never misses a headshot — even when it’s just a vibe check.",
+};
+
+const chaosData = {
+  drivingIQ: 4,
+  RoastPower:5,
+  LeatureSurvival:2,
+  MoodSwing:3,
+};
+
+
+
+const imgData = {
+  src: "./Prajwal.png",
+  Btndata: "Summon the Legend",
+ 
+};
+
   return (
     <>
       <Animated/> {/* this is Animated Component */}
      {showContent && <div className="main w-full bg-black rotate-[-10deg] scale-[1.7]">
-        <Land characterImg="./image-Photoroom.png"/> {/* this is Land Component */}
+        <Land characterImg="./PrajwalSelife.png" /> {/* this is Land Component */}
         <div className="w-full h-screen flex bg-black items-center justify-center px-10"> // this is the section below Land Component
           <div className="cont flex text-white w-full h-[80%] ">
            <div className="leftimg relative w-1/2 h-full">
-          <TiltedCard imageSrc="./public/Prajwal.png"/>
+          <TiltedCard imageSrc="./public/PrajwalSit.png"/>
            </div>
            <Download
             data={DownloadData}

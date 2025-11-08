@@ -84,7 +84,6 @@ function Sonal() {
   const main = document.querySelector(".main")
   main?.addEventListener("mousemove", function (e){ // this code makes the parallax effect
     const xMove = (e.clientX / window.innerWidth - 0.5) * 40;  
-    const yMove = (e.clientY / window.innerWidth - 0.5) * 40; 
    
     gsap.to(".main .text",{
       x: `${xMove*0.4}%`,
@@ -100,34 +99,59 @@ function Sonal() {
     });
   })
  }, [showContent]);
- const DownloadData = {
-            Head1: "Still Running",
-            Head2: "Not Hunting",
-            para1: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas laborum aut illum consectetur expedita repudiandae magnam voluptate inventore ea laboriosam!",
-            para2: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad illum eum sunt eos, consequatur fugiat?",
-            para3: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad illum eum sunt eos, consequatur fugiat?"
- }
-  const cardData = [
-  { Head: "Card Heading 1", para: "This is the first paragraph of the card." },
-  { Head: "Card Heading 2", para: "This is the second paragraph of the card." },
-  { Head: "Card Heading 3", para: "This is the third paragraph of the card." },
-  { Head: "Card Heading 4", para: "This is the fourth paragraph of the card." },
-  ];
-  const Madness = {
-    Madness1 : "Turns every getaway into a cinematic masterpiece.",
-    Madness2 : "Recharges health by flexing in the mirror.",
-    Madness3 : "Police reports list him as “unrealistic.”",
-    Madness4 : "Never misses a headshot — even when it’s just a vibe check."
-  }
-  const chaosData = {
-    drivingIQ: 3,
-    coolnessFactor: 5,
-    chaosLevel: 3,
-  };
-  const imgData = {
-    src: "./Prajwal.png",
-    Btndata : "Summon the Legend"
-  }
+const DownloadData = {
+  Head1: "Sonalla",
+  Head2: "The Solutionist",
+  para1:
+    "Sonalla is the group’s softest yet strongest heart. She’s emotional, sweet, and kind — the one who makes everyone feel heard and cared for. People often underestimate her calm nature, not realizing how strong she really is when things get heavy.",
+  para2:
+    "Known across college for being friendly and approachable, she somehow knows everyone — from classmates to seniors, and even the canteen guy. Her kindness makes her a magnet for people, even if it sometimes leads her to care too much.",
+  para3:
+    "She laughs easily, gets attached quickly, and feels deeply — but she never regrets it. Her emotions are her strength, not her weakness. When the group falls apart, she’s the one who quietly pieces everyone back together.",
+};
+
+const cardData = [
+  {
+    Head: "Background",
+    para:
+      "Sonalla’s presence makes people feel safe. She’s the friend who listens, the one who actually checks in, and the one whose laughter fills any empty space. People often come to her for advice — not because she knows everything, but because she listens like she does.",
+  },
+  {
+    Head: "Personality",
+    para:
+      "Emotional, kind, and bright. She wears her heart on her sleeve and doesn’t hide her feelings. She fixes her hair every few minutes, laughs at even bad jokes, and has the rare ability to make people feel understood without saying much.",
+  },
+  {
+    Head: "What Drives Her",
+    para:
+      "She seeks peace — not silence, but balance. Her goals are simple: success, happiness, and genuine friendships. She believes in doing good quietly and achieving things with grace. Success for her isn’t competition — it’s growth.",
+  },
+  {
+    Head: "Little Things",
+    para:
+      "Her laugh is her signature — recognizable from a distance. She’s always fixing her hair when nervous or thinking, and she never hesitates to hug someone who needs comfort. Her phone gallery is filled with random photos of friends and quotes she finds 'cute.'",
+  },
+];
+
+const Madness = {
+  Madness1: "Can make anyone laugh even during chaos.",
+  Madness2: "Uses kindness as her secret superpower.",
+  Madness3: "Her laughter cures temporary sadness instantly.",
+  Madness4: "Turns awkward silence into comfort with a smile.",
+};
+
+const chaosData = {
+  drivingIQ: 4,
+  RoastPower:5,
+  LeatureSurvival:2,
+  MoodSwing:3,
+};
+
+const imgData = {
+  src: "./Prajwal.png",
+  Btndata: "Summon the Sunshine",
+};
+
   return (
     <>
       <Animated/> {/* this is Animated Component */}
@@ -136,7 +160,7 @@ function Sonal() {
         <div className="w-full h-screen flex bg-black items-center justify-center px-10">
           <div className="cont flex text-white w-full h-[80%] ">
            <div className="leftimg relative w-1/2 h-full">
-          <TiltedCard imageSrc="./public/Sonal.png"/>
+          <TiltedCard imageSrc="./public/Prajwal.png"/>
            </div>
            <Download
             data={DownloadData}

@@ -74,8 +74,8 @@ function Vaishnavi() {
   gsap.to(".character",{
   rotate:0,
   x:"-50",
-  bottom:"-1%",
-  scale:1.4,
+  bottom:"-5%",
+  scale:0.9,
   delay:"-.7",
   duration:2.5,
   ease:"Expo.easeInOut"
@@ -101,38 +101,63 @@ function Vaishnavi() {
   })
  }, [showContent]);
  const DownloadData = {
-            Head1: "Still Running",
-            Head2: "Not Hunting",
-            para1: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas laborum aut illum consectetur expedita repudiandae magnam voluptate inventore ea laboriosam!",
-            para2: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad illum eum sunt eos, consequatur fugiat?",
-            para3: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad illum eum sunt eos, consequatur fugiat?"
- }
-  const cardData = [
-  { Head: "Card Heading 1", para: "This is the first paragraph of the card." },
-  { Head: "Card Heading 2", para: "This is the second paragraph of the card." },
-  { Head: "Card Heading 3", para: "This is the third paragraph of the card." },
-  { Head: "Card Heading 4", para: "This is the fourth paragraph of the card." },
-  ];
-  const Madness = {
-    Madness1 : "Turns every getaway into a cinematic masterpiece.",
-    Madness2 : "Recharges health by flexing in the mirror.",
-    Madness3 : "Police reports list him as “unrealistic.”",
-    Madness4 : "Never misses a headshot — even when it’s just a vibe check."
-  }
-  const chaosData = {
-    drivingIQ: 3,
-    coolnessFactor: 5,
-    chaosLevel: 3,
-  };
-  const imgData = {
-    src: "./Prajwal.png",
-    Btndata : "Summon the Legend"
-  }
+  Head1: "ViratPaglu",
+  Head2: "The Designer",
+  para1:
+    "The Tailor isn’t loud or attention-seeking — she’s the one who quietly makes things beautiful. She’s the calmest in the group, an observer who notices every detail — how people move, talk, or even stay silent. That’s what makes her art feel alive.",
+  para2:
+    "She’s deeply passionate about art and design. Every line she draws, every outfit she sketches, has meaning. Her dream isn’t fame — it’s expression. She’s fascinated by fashion and loves turning her art into designs that reflect mood, personality, and peace.",
+  para3:
+    "Her focus is rare. While others drift between interests, she can spend hours lost in her designs — completely immersed, completely herself. Her art is her voice; her silence, her strength.",
+};
+
+const cardData = [
+  {
+    Head: "Background",
+    para:
+      "Known by everyone, understood by few. The Tailor is the calm, mysterious artist who brings color into silence. She discovered her passion for art early and turned it into focus — spending nights refining lines and experimenting with textures. Her art isn’t just a hobby; it’s how she processes the world.",
+  },
+  {
+    Head: "Personality",
+    para:
+      "Introverted yet expressive, soft-spoken but strong-minded. She doesn’t need attention to feel seen — her presence speaks through her work. Moody at times, elegant always, she carries an energy that feels peaceful and powerful at once. Around friends, she’s quiet comfort and silent strength.",
+  },
+  {
+    Head: "What Drives Her",
+    para:
+      "She’s driven by creation — designing clothes, sketching art, and finding beauty in little details. Fashion design fascinates her, not for style alone, but for the emotion behind it — how what you wear can tell a story. Every piece she creates is thoughtful, personal, and layered with feeling.",
+  },
+  {
+    Head: "Little Things",
+    para:
+      "She’s always sketching — on paper, napkins, even her notebook margins. You’ll often find her staring out of windows, lost in thought, or painting late into the night. Her bracelets and rings have stories, her colors have moods, and her quiet moments often become masterpieces.",
+  },
+];
+
+const Madness = {
+  Madness1: "Sketches peace in chaos — literally.",
+  Madness2: "Can turn silence into an art form.",
+  Madness3: "Her calm energy is more intimidating than anger.",
+  Madness4: "Creates beauty faster than most people can think.",
+};
+
+const chaosData = {
+   drivingIQ: 2,
+  RoastPower:2,
+  LeatureSurvival:1,
+  MoodSwing:4,
+};
+
+const imgData = {
+  src: "./Prajwal.png",
+  Btndata: "Summon the Creator",
+};
+
   return (
     <>
       <Animated/> {/* this is Animated Component */}
      {showContent && <div className="main w-full bg-black rotate-[-10deg] scale-[1.7]">
-        <Land characterImg="./image-Photoroom.png"/> {/* this is Land Component */}
+        <Land characterImg="./VaishSelfie.png"/> {/* this is Land Component */}
         <div className="w-full h-screen flex bg-black items-center justify-center px-10">
           <div className="cont flex text-white w-full h-[80%] ">
            <div className="leftimg relative w-1/2 h-full">
