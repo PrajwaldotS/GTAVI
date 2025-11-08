@@ -75,7 +75,7 @@ function Salila() {
   rotate:0,
   x:"-50",
   bottom:"-10%",
-  scale:0.9,
+  scale:0.8,
   delay:"-.7",
   duration:2.5,
   ease:"Expo.easeInOut"
@@ -149,7 +149,7 @@ const chaosData = {
 };
 
 const imgData = {
-  src: "./Prajwal.png",
+  src: "./SalilaSit.png",
   Btndata: "Summon the Storm",
 };
 
@@ -161,7 +161,7 @@ const imgData = {
         <div className="w-full h-screen flex bg-black items-center justify-center px-10">
           <div className="cont flex text-white w-full h-[80%] ">
            <div className="leftimg relative w-1/2 h-full">
-          <TiltedCard imageSrc="./public/Prajwal.png"/>
+          <TiltedCard imageSrc="./public/SalilaCar.png"/>
            </div>
            <Download
             data={DownloadData}
@@ -170,7 +170,7 @@ const imgData = {
         </div>
         <Cards data={Madness} chaosData={chaosData} imgData={imgData}/> {/* this is Cards Component */}
         <ScrollCard 
-        StandImg="/personcar.png" 
+        StandImg="/SalilaGun.png" 
         data={cardData}/> {/* this is ScrollCard Component */}
      </div>
      

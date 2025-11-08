@@ -21,7 +21,7 @@ const Land = ({characterImg}) => {
               <h1 className="text-[12rem] leading-none  ml-20">Theft</h1>
               <h1 className="text-[12rem] leading-none  -ml-40">Auto</h1>
             </div>
-            <img src={characterImg} alt="" className="character  absolute -bottom-[150%] scale-[3] rotate-[-25deg]  -translate-x-1/2 ml-[38rem] left-1/3 " />
+            <img src={characterImg} alt="" className="character  absolute -bottom-[150%] scale-[3] rotate-[-25deg]  -translate-x-1/2 ml-[15rem] left-1/3 " />
             <div className="btmbar w-full py-10 px-10 absolute bg-gradient-to-t from-black to-transparent bottom-0 left-0"> {/* this is bottom bar not fotter */}
             <div className="flex gap-4 text-white text-4xl">
               <i className="ri-arrow-down-line"></i>

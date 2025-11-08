@@ -12,7 +12,7 @@ export default function TiltedCard({
   altText = 'Tilted card image',
   captionText = 'The Hero',
   containerHeight = '100%',
-  containerWidth = '90%',
+  containerWidth = '80%',
   imageHeight = '1000px',
   imageWidth = '800px',
   scaleOnHover = 1.1,

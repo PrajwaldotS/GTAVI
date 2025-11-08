@@ -41,11 +41,11 @@ const Home = () => {
    })
  });
  const cards = [
-    { height: "70%", route: "/prajwal" },
-    { height: "75%", route: "/salila" },
-    { height: "80%", route: "/praachi" },
-    { height: "75%", route: "/sonal" },
-    { height: "70%", route: "/Vaishnavi" },
+    { height: "70%", src:"./PraachiGun.png" , route: "/salila" },
+    { height: "75%", src:"./SalilaGun.png" , route: "/praachi" },
+    { height: "80%", src:"./PrajwalGun.png" , route: "/prajwal" },
+    { height: "75%", src:"./VaishGun.png" , route: "/sonal" },
+    { height: "70%", src:"./SonalGun.png" , route: "/Vaishnavi" },
   ];
   return (
     <>
@@ -80,7 +80,7 @@ const Home = () => {
         </svg>
       </div> 
       {/* /this makes the VI Animation */}
-   { showContent && <div className='bg-black text-center pt-10  text-white text-8xl'>
+   { showContent && <div className='bg-[url("./HomeBg.jpg")] text-center pt-10  text-white text-8xl'>
      <div className="navbar absolute top-0 left-0 w-full py-10 px-10 z-[10] "> {/* this is nav bar*/}
               <div className="logo flex justify-between">
                 <div className="lines flex gap-[5px]  flex-col">
@@ -104,10 +104,10 @@ const Home = () => {
                     </div>
               </div>
           </div>
-     <div className='h-screen bg-black text-white flex   items-center justify-center px-[100px] pb-20 gap-10'>
+     <div className='h-screen  text-white flex items-center justify-center mx-[8rem] pb-20 gap-10'>
        
       {cards.map((card,idx)=>(
-        <HomeCard key={idx} height={card.height} route={card.route}/>
+        <HomeCard key={idx} height={card.height} route={card.route} src={card.src}/>
       ))}
       
 

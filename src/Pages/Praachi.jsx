@@ -75,8 +75,8 @@ function Praachi() {
   gsap.to(".character",{
   rotate:0,
   x:"-50",
-  bottom:"-1%",
-  scale:1.4,
+  bottom:"-10%",
+  scale:0.8,
   delay:"-.7",
   duration:2.5,
   ease:"Expo.easeInOut"
@@ -150,7 +150,7 @@ const chaosData = {
 };
 
 const imgData = {
-  src: "./Prajwal.png",
+  src: "./PraachiSit.png",
   Btndata: "Summon the Rebel",
 };
 
@@ -158,11 +158,11 @@ const imgData = {
     <>
       <Animated/> {/* this is Animated Component */}
      {showContent && <div className="main w-full bg-black rotate-[-10deg] scale-[1.7]">
-        <Land characterImg="./image-Photoroom.png"/> {/* this is Land Component */}
+        <Land characterImg="./PraachiSelfie.png"/> {/* this is Land Component */}
         <div className="w-full h-screen flex bg-black items-center justify-center px-10">
           <div className="cont flex text-white w-full h-[80%] ">
            <div className="leftimg relative w-1/2 h-full">
-          <TiltedCard imageSrc="./public/Prajwal.png"/>
+          <TiltedCard imageSrc="./public/PraachiCar.png"/>
            </div>
            <Download
             data={DownloadData}
@@ -171,7 +171,7 @@ const imgData = {
         </div>
         <Cards data={Madness} chaosData={chaosData} imgData={imgData}/>  {/* this is Cards Component */}
         <ScrollCard 
-        StandImg="/personcar.png" 
+        StandImg="/PraachiGun.png" 
         data={cardData}/> {/* this is ScrollCard Component */}
      </div>
      

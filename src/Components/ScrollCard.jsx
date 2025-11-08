@@ -6,7 +6,7 @@ const ScrollCard = ({StandImg, data}) => {
     <div className='h-screen w-100% gap-10 bg-black flex items-center justify-center'>
      <div className='w-[33%] h-[100%]  overflow-hidden'>
         <img
-             className="object-cover h-[100%] w-auto scale-[1.32] [box-shadow:0_0_50px_10px_rgba(234,179,8,0.4)]"
+             className="object-cover h-[100%] w-auto scale-[1] "
              src={StandImg}
              alt=""
         />

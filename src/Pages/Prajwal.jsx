@@ -95,8 +95,8 @@ function Prajwal() {
   gsap.to(".character",{
   rotate:0,
   x:"-50",
-  bottom:"-1%",
-  scale:0.95,
+  bottom:"-10%",
+  scale:0.8,
   delay:"-.7",
   duration:2.5,
   ease:"Expo.easeInOut"
@@ -172,7 +172,7 @@ const chaosData = {
 
 
 const imgData = {
-  src: "./Prajwal.png",
+  src: "./PrajwalSit.png",
   Btndata: "Summon the Legend",
  
 };
@@ -185,7 +185,7 @@ const imgData = {
         <div className="w-full h-screen flex bg-black items-center justify-center px-10"> // this is the section below Land Component
           <div className="cont flex text-white w-full h-[80%] ">
            <div className="leftimg relative w-1/2 h-full">
-          <TiltedCard imageSrc="./public/PrajwalSit.png"/>
+          <TiltedCard imageSrc="./public/PrajwalCar.png"/>
            </div>
            <Download
             data={DownloadData}
@@ -194,7 +194,7 @@ const imgData = {
         </div>
         <Cards data={Madness} chaosData={chaosData} imgData={imgData}/> {/* this is Cards Component */}
         <ScrollCard 
-        StandImg="/personcar.png" 
+        StandImg="/PrajwalGun.png" 
         data={cardData}/> {/* this is ScrollCard Component */}
      </div>
      
